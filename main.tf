@@ -1147,3 +1147,8 @@ resource "aws_default_vpc" "this" {
     var.default_vpc_tags,
   )
 }
+
+module "vpc" {
+  source  = "app.terraform.io/freewill-training/vpc/aws"
+  version = "2.44.0"
+}
